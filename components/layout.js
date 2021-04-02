@@ -61,6 +61,9 @@ export default function Layout({ children, title, home }) {
           </>
         )}
       </header>
+      <div>
+        <Link href="/jsonPosts"><a>jsonPosts</a></Link>
+      </div>
       <main>{children}</main>
       {!home && (
         <div className={styles.backToHome}>
