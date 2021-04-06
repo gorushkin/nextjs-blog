@@ -5,7 +5,7 @@ import utilStyles from '../../styles/utils.module.css'
 import { useRouter } from 'next/router'
 
 export default function Post({ postData }) {
-  const router = useRouter()
+  // const router = useRouter()
 
   return (
     <Layout title={postData.title}>
@@ -22,7 +22,6 @@ export default function Post({ postData }) {
 
 export async function getStaticPaths() {
   const paths = getAllPostIds();
-  console.log('paths: ', paths);
   return {
     paths,
     fallback: false,
